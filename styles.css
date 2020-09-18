@@ -12,6 +12,11 @@ li {
   font-weight: 900;
 }
 
+.link{
+  color: #148780 !important;
+  font-weight: bold;
+}
+
 /* Laptops and desktops */
 @media only screen and (min-width: 1025px) {
   section {

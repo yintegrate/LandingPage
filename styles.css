@@ -7,12 +7,12 @@ li {
   font-family: "Open Sans", sans-serif;
 }
 
-.yintegrate{
+.yintegrate {
   color: #007bff;
   font-weight: 900;
 }
 
-.link{
+.link {
   color: #148780 !important;
   font-weight: bold;
 }
@@ -25,17 +25,25 @@ li {
     padding-bottom: 100px;
     padding-left: 150px;
     padding-right: 150px;
-    min-height: 550px;
+    min-height: 550px;    
+  }
+
+  #mobile-tryme {
+    display: none;
   }
 
   #tryMeMobile{
     display: none;
-  }
+  }  
 
-  #nav {
-    display: none !important;
-  }
-
+  /* Top image */  
+.img-top{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 200px;
+}
+  
   /* About section */
   .card h5 {
     font-size: 26px !important;
@@ -51,20 +59,12 @@ li {
   }
 
   /* Products */
-  #products li {
-    font-size: 20px;
-  }
   
+
 }
 
 /* Mobiles */
 @media only screen and (max-width: 1025px) {
-  #top-image {
-    display: none;
-    height: 50%;
-    width: 100%;
-  }
-
   section {
     padding-left: 10px;
     padding-right: 10px;
@@ -75,6 +75,20 @@ li {
     font-size: 24px;
     padding-left: 10px;
   }
+
+  /* Top image */  
+  .top-container{
+    height: 280px;
+    padding: 0px;
+  }
+
+.img-top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  height: 280px !important;
+}
 
   /* About Section */
   .card h5 {
@@ -96,9 +110,77 @@ li {
     font-size: 12px !important;
   }
   /* Products */
-  #products li {
-    font-size: 16px;
+  
+  /* tryme */
+  #laptop-tryme{
+    display: none;
   }
+}
+
+/* Navbar */
+.navbar{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #ffffff !important;
+}
+
+.navbar-nav{
+  padding-right: 75px;
+}
+
+.navbar-brand {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.nav-item{
+  font-size: 1.2rem;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.nav-link{
+  color: #148780 !important;   
+  font-weight: 700; 
+}
+
+.nav-link:hover{
+  border-bottom:  #148780 solid;
+}
+
+
+/* Top image */
+
+.top-container{
+  background: rgb(253,253,253);
+background: linear-gradient(90deg, rgba(253,253,253,1) 9%, rgba(213,214,216,1) 33%, rgba(213,214,216,1) 61%, rgba(253,253,253,1) 82%);
+}
+
+.img-top {
+  width: 100%;
+  height: 400px;
+  background-image: url('earth.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* Try me button */
+#tryMe{
+  position: relative;
+  background-image: linear-gradient(
+    120deg,
+    #f093fb 0%,
+    #f5576c 100%
+  );
+  border: none;
+}
+
+#tryMe:active,#tryMe:focus,#tryMe:hover{
+  border: none !important;
+  border-color: transparent  !important;
+  background-color: transparent  !important;
+  box-shadow: none !important;
 }
 
 img[usemap],
@@ -188,12 +270,12 @@ map area[shape] {
   text-align: center;
 }
 
-#expanded-1 .card-title{
+#expanded-1 .card-title {
   padding-right: 30px;
   padding-left: 20px;
 }
 
-#expanded-2 .card-title{
+#expanded-2 .card-title {
   padding-right: 20px;
   padding-left: 30px;
 }
@@ -352,18 +434,31 @@ map area[shape] {
   background-image: linear-gradient(120deg, #8fd3f4 0%, #84fab0 100%);
 }
 
-#products li {
-  line-height: 35px;
+.product-card{
+  width: 400px;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-radius: 50px
 }
 
-#products ul {
-  list-style-type: none;
+#products .card img{
+  max-width:100%;
+  border-top-right-radius:50px;
+  border-top-left-radius:50px;
 }
 
-#products ul li::before {
-  content: "\f005";
-  font-family: "Font Awesome 5 Free";
-  padding: 0 10px 0 0;
+#products .card-body{
+  padding: 0px;
+}
+
+#products .card-text{
+  text-align: justify;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#products .exp-text{
+  padding-bottom: 20px;
 }
 
 /* Modal */
@@ -377,24 +472,24 @@ map area[shape] {
   border-top-color: transparent;
 }
 
-.yourName{
+.yourName {
   text-align: center;
 }
 
 /* TryMeMobile */
 
-#tryMeMobile{
+#tryMeMobile {
   padding-top: 20px;
   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 }
 
-#tryMeMobile .tryMe-head{
+#tryMeMobile .tryMe-head {
   font-size: 30px;
   text-align: center;
 }
 
-#tryMeMobile .table-borderless{
- padding-right: 40px;
+#tryMeMobile .table-borderless {
+  padding-right: 40px;
 }
 
 /* Footer */

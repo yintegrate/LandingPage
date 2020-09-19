@@ -18,43 +18,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Yintegrate</a>
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light ">
+      <a class="navbar-brand" href="#">
+        <img src="Yintegrate_logo.jpeg" width="200" height="100" alt="">
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item ">
-            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#mission-vission">Mission & Vision</a>
+            <a class="nav-link " href="#mission-vision">Mission & Vision</a>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="#products">Products</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#tryMeMobile">Try me!</a>
+          <li id="mobile-tryme" class="nav-item ">
+            <a class="nav-link" href="#tryMeMobile" >Try me!</a>
           </li>
         </ul>
       </div>
     </nav>
-
-    <div class="container-fluid">
-    <img id="top-image" src="Revised Hero Slider.png" usemap="#image_map">
+   <div class="top-container d-flex justify-content-center">
+      <div class="img-top">
+        <a id="tryMe" href="" data-reveal-id="#tryMeModal" data-toggle="modal" data-target="#tryMeModal"  class="btn btn-primary btn-lg" >Try me now!</a>
+      </div>
+   </div>
     <div id="WAButton"></div>
-    <map name="image_map">
-      <area alt="product" title="product" href="#products" coords="642,120,999,220" shape="rect">
-      <area alt="mission-vision" title="mission-vision" href="#mission-vision" coords="610,225,969,350" shape="rect">
-      <area id="try" alt="try" title="try" href="" data-reveal-id="#tryMeModal" data-toggle="modal" data-target="#tryMeModal" coords="599,385,943,480" shape="rect">
-      <area alt="about" title="about" href="#about" coords="462,490,773,590" shape="rect">
-      <area alt="home" title="home" href="#home" coords="294,595,572,676" shape="rect">
-    </map>
+    <div class="container-fluid">
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i>&nbsp Top</button>
         
     <section id="home">
@@ -84,11 +82,7 @@
               <li>YOUR OWN Brand!! Powered by <span class="yintegrate">Yintegrate</span>. </li>
               <li>Content is King, your data is your business and you ‘will’ know where ‘IT’ resides.</li>
               <li><b>GDPR & CCPA compliant</b></li>
-              <li>Secure & Managed</li>
               <li>Hardware, Application, OS and Browser agnostic</li>
-              <li>Out of the box concept, collaboration with a twist</li>
-              <li>Tried, tested, scalable, easy to use and Intuitive</li>
-              <li>Real people you know behind real solutions</li>
               <li>Pay as you play (à la carte). One size does not fit all. Cost effective</li>
               <li>Made in India, Paid in INR</li>
               <li>Your need – Our creed.</li>
@@ -126,12 +120,20 @@
   
           <section id="products">
             <h1 class="section-head">Products</h1>
-            <ul>
-              <li>Education – VC/LMS/School ERP/Document Management Solution (DMS)</li>
-              <li>On Websites for customer retention (<span class="link">Yconnect</span> - Augmented BOTS)</li>
-              <li>Virtual Offices and Organization Management <b>(under one roof)</b></li>              
-              <li>Symposiums, Webinars and Clubs <a class="yintegrate" target="_blank" href="https://ycommute.rogergate.com/"><span >( Ycommute ) <i class="fas fa-link"></i></span></a></li>
-            </ul>
+           <div class="row d-flex justify-content-around">
+              <div class="card product-card">
+                <div class="card-body">
+                  <img class="card-img-top" src="Yconnect.jpeg" alt="">                  
+                  <div class="exp-text"><p class="card-text">A multilingual communication tool designed to empower you and your team to always stay in control of all internal and external virtual communications. </p></div>
+                  </div>
+              </div>
+              <div class="card product-card">
+                <div class="card-body"> 
+                  <img class="card-img-top" src="Ycommute.jpeg" alt="">                  
+                  <div class="exp-text"><p class="card-text">Our flagship product that helps simulate real world experiences on a virtual platform keeping in mind global security compliance benchmarks (<b>GDPR</b> and <b>CCPA</b>) and user accessibility to empower your workflow the way you see fit. </p></div>
+                </div>
+            </div>
+           </div>
           </section>
 
           <section id="tryMeMobile">

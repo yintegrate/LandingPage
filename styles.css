@@ -68,12 +68,7 @@ li {
     padding-left: 10px;
   }
 
-  /* Top image */  
-  .top-container{
-    height: 280px;
-    padding: 0px;
-  }
-
+ 
 .img-top{
   display: flex;
   align-items: center;
